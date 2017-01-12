@@ -5,7 +5,7 @@ I gathering this challenge  generating a list of 1 millions of sample books taki
 * sort by author and book
 * filter by genre and author gender
 * indicate books in the horror genre, published on halloween and in the finance genre, published the last friday of any month
-_________________________________________________________________________________________________________
+
 ##HOW WORK
 * This app generates 1 million or more random books (see conf file). During the loading the gui work without block and a preloading phase is made, so you can use the app
 also the book store is not completely loaded. The scrollbar is not browser dependent in order to resolve problems related to the max size available (it depends on number of books and size of block displayed).
