@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Manage huge list of 1 millions or more books">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <!--Import Google fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,100,400' rel='stylesheet' type='text/css'>
+    <!--Import Font awesome-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/css.min.css">
+
+    <title>Love Lists!</title>
+</head>
+
+<body>
+<!-- Progress Bar -->
+<div class="progress">
+    <div class="live"></div>
+</div>
+<!-- Tool Bar -->
+<nav class="nav toolbar">
+    <ul>
+        <li title="Create a new store" class="right">
+            <a id="btnGenerateListBook"> <i class="fa fa-download fa-lg" aria-hidden="true"></i> </a>
+        </li>
+        <li title="sort">
+            <a><i class="fa fa-sort-alpha-asc fa-fw" aria-hidden="true"></i></a>
+            <ul>
+                <li><a id="btnSortListBookByName">Title</a></li>
+                <li><a id="btnSortListBookByAuthorName">Author</a></li>
+            </ul>
+        </li>
+        <li title="Catalog">
+            <a id="btnCatalog"> <i class="fa fa-book fa-lg" aria-hidden="true"></i></a>
+            <ul id="menuGenres" class="menuGenres"></ul>
+        </li>
+        <li title="More books">
+            <a id="btnMoreBooks"><i class="fa fa-star fa-lg" aria-hidden="true"></i></a>
+            <ul id="menuMore" class="menuMore"></ul>
+        </li>
+        <li title="Filters">
+            <a><i class="fa fa-filter fa-fw" aria-hidden="true"></i></a>
+            <ul>
+                <li>
+                    <a> <i class="fa fa-male fa-fw" aria-hidden="true"></i>
+                        <input type="checkbox" class=" btnGenerateFilterByAuthorGender"
+                               id="btnGenerateFilterByAuthorGenderM"/>
+                        <label for="btnGenerateFilterByAuthorGenderM">Author</label>
+                    </a>
+                </li>
+                <li>
+                    <a> <i class="fa fa-female fa-fw" aria-hidden="true"></i>
+                        <input type="checkbox" class=" btnGenerateFilterByAuthorGender"
+                               id="btnGenerateFilterByAuthorGenderF"/>
+                        <label for="btnGenerateFilterByAuthorGenderF">Authoress</label>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!-- List -->
+<div class="virtual-container">
+    <ul id="virtual-list" class="virtual-list"></ul>
+    <div class="scrollbar">
+        <a style="position:absolute;top:3px" id="scrollUp">
+            <i class="fa fa-arrow-circle-o-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <a style="position:absolute;bottom:3px" id="scrollDown">
+            <i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+<!-- App script -->
+<!--<script type="text/javascript" src="js/helper/helper.js"></script>
+<script type="text/javascript" src="js/conf/conf.js"></script>
+<script type="text/javascript" src="js/modules/Models/Book.js"></script>
+<script type="text/javascript" src="js/modules/Services/ToolBarService.js"></script>
+<script type="text/javascript" src="js/modules/Components/List.js"></script>
+<script type="text/javascript" src="js/modules/Components/Toolbar.js"></script>
+<script type="text/javascript" src="js/modules/Models/BookStore.js"></script>
+<script type="text/javascript" src="js/app.js"></script>-->
+<script type="text/javascript" src="dist/js/js.min.js"></script>
+
+</body>
+</html>

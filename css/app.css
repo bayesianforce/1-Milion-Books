@@ -1,0 +1,24 @@
+/*GENERAL*/
+body, html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    height: 100%;
+    font-weight: 400;
+
+}
+
+body {
+    margin: 0;
+    padding: 0 4px;
+    color: rgba(0, 0, 0, 0.65);
+    background: url('/img/fox.png') no-repeat center;
+}
+
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
