@@ -1,26 +1,20 @@
-# Love Lists
-I gathering this challenge  generating a list of 1 millions of sample books ( or more) with fast scrolling, taking care about performance and memory
-* generate a list of 1 millions or more books
-* display 1 millions or more of book
-* sort by author and book
-* filter by genre and author gender
-* indicate books in the horror genre, published on halloween and in the finance genre, published the last friday of any month
 
 ##HOW WORK
-* This app generates 1 million or more random books (see conf file). During the loading the gui work without block and a preloading phase is made, so you can use the app
+* This app generates 1 million or more random items. You can start the process of item genrartion, clicking on the right-top button of the GUI. 
+A preloading phase is made, avoi
 also the book store is not completely loaded. The scrollbar is not browser dependent in order to resolve problems related to the max size available (it depends on number of books and size of block displayed).
 
 ## INSTALLATION
 * npm install for development (npm install gulp if needed)
 * gulp build
-* digit npm start on the root of the project
+* npm start
 * check the app on http://localhost:3000
+* Generate items clicking on the top-right button
+* use arrows to scroll items.
 
 ## Features
-Create a new book store (progressive way) clicking on the right button
+Create a Progressive new book store clicking on the right button
 navigate during or after loading the book store without pause
-Use filters
-## next steps
-searching, improve usability, load books from external sources and add them manually
+Book filtering
 
 
